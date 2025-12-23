@@ -1,0 +1,11 @@
+title: Curl Suspicious Download
+id: 9a3e8d21-5bf4-4c12-9e8d-1f2a3b4c5d6e
+status: experimental
+logsource:
+  category: process_creation
+  product: linux
+detection:
+  selection:
+    CommandLine|contains: 'curl'
+  condition: selection
+level: medium
